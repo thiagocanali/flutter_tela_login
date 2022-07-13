@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tela_login/widgets/configs.dart';
+import 'package:tela_login/widgets/itens.dart';
 import 'package:tela_login/widgets/login.dart';
 import 'package:tela_login/widgets/home.dart';
+import 'package:tela_login/widgets/perfil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +25,9 @@ initialRoute: '/',
 routes: {
 '/' :(context) => Login(),
 '/home': (context) => HomePage(),
+'/itens': (context) => Itens(),
+'/profile': (context) => Profile(),
+'/configs': (context) => Settings(),
 },
     );
   }
